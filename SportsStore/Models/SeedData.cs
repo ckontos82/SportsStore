@@ -31,7 +31,7 @@ namespace SportsStore.Models
                     {
                         ProductID = Guid.NewGuid(),
                         Name = "Adidas Performance",
-                        Description = "Men's T-shirt Official Emblem",
+                        Description = "Men's T-shirt Official Emblem of Euro 2024",
                         Category = "Clothing",
                         Price = 23.99m
                     },
