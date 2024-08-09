@@ -12,9 +12,7 @@ namespace SportsStore.Models
                 .GetRequiredService<StoreDbContext>();
 
             if (context.Database.GetPendingMigrations().Any())
-            {
                 context.Database.Migrate();
-            }
 
             if (!context.Products.Any())
             {
@@ -85,7 +83,7 @@ namespace SportsStore.Models
                     },
                     new Product
                     {
-                        ProductID = Guid.NewGuid(),    
+                        ProductID = Guid.NewGuid(),
                         Name = "Pro Touch Spiko 100",
                         Description = "Volleyball Ball",
                         Category = "Volleyball",
