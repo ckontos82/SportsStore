@@ -15,7 +15,7 @@ namespace SportsStore.Controllers
         }
 
         public ViewResult Index(int productPage = 1) 
-            => View(new ProductListViewModel
+            => View(new ProductsListViewModel
             {
                 Products = _repository.Products
                             .OrderBy(p => p.ProductID)
